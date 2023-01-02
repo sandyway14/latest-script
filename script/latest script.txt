@@ -1,0 +1,17 @@
+check_use""""
+{
+if [ -e /etc/passwd ]
+then
+echo "it exist. please proceed..."
+grep ec2-user /etc/passwd
+#tail -5 /etc/passwd
+touch test24.java /home/ec2-user/
+touch testb.py .
+ls test.py .
+else
+echo "it doesn't exist"
+fi
+}
+echo Before function
+check_user
+echo After function
